@@ -1,4 +1,4 @@
-baseURL = "https://dreamstack.ink/"
+baseURL = "https://howboring.github.io/"
 title = "InitialiZ"
 defaultContentLanguage = "en"
 themesDir = "themes"
@@ -53,7 +53,7 @@ url = "mailto:code7thday@outlook.com"
 
 [[params.social]]
 name = "github"
-url = "https://github.com/Code7thDay"
+url = "https://github.com/howboring"
 
 # [[params.social]]
 # name = "linkedin"
