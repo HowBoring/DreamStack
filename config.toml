@@ -1,0 +1,99 @@
+baseURL = "https://dreamstack.ink/"
+title = "InitialiZ"
+defaultContentLanguage = "en"
+themesDir = "themes"
+theme = "Hello-Friend"
+canonifyURLs = true
+enableEmoji = true
+enableGitInfo = true
+enableRobotsTXT = true
+disableRSS = false
+disableSitemap = false
+disable404 = false
+disableHugoGeneratorInject = false
+
+[params]
+dateform = "Jan 2, 2006"
+dateformShort = "Jan 2"
+dateformNum = "2006-01-02"
+dateformNumTime = "2006-01-02 15:04 -0700"
+# Metadata mostly used in document's head
+description = "Code as Poetry."
+keywords = ["Python", "C++", "Julia", "Machine Learning"]
+justifyContent = false
+contentTypeName = "posts"
+# Default theme "light" or "dark"
+defaultTheme = "dark"
+themeColor = "#252627"
+
+homeSubtitle = "Code as Poetry."
+
+# Colors for favicons
+[params.favicon.color]
+mask = "#252627"
+msapplication = "#252627"
+theme = "#252627"
+
+[params.logo]
+logoText = "$ cd /home/"
+logoHomeLink = "/"
+
+# Set true to remove the logo cursor entirely.
+# logoCursorDisabled = false
+# Set to a valid CSS color to change the cursor in the logo.
+# logoCursorColor    = "#67a2c9"
+# Set to a valid CSS time value to change the animation duration, "0s" to disable.
+# logoCursorAnimate  = "2s"
+# [[params.social]]
+# name = "twitter"
+# url = "https://twitter.com/"
+[[params.social]]
+name = "email"
+url = "mailto:code7thday@outlook.com"
+
+[[params.social]]
+name = "github"
+url = "https://github.com/Code7thDay"
+
+# [[params.social]]
+# name = "linkedin"
+# url = "https://www.linkedin.com/"
+# [[params.social]]
+# name = "stackoverflow"
+# url = "https://www.stackoverflow.com/"
+[languages]
+
+[languages.en]
+weight = 1
+# language code
+languageCode = "en"
+# language name
+languageName = "English"
+# whether to include Chinese/Japanese/Korean
+hasCJKLanguage = true
+# [UA--X] google analytics code
+googleAnalytics = ""
+# copyright description used only for seo schema
+# copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+
+[permalinks]
+posts = "/posts/:year/:month/:title/"
+
+[author]
+name = "Zachariah Hou"
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+
+[menu]
+
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "about/"
+
+[[menu.main]]
+identifier = "posts"
+name = "Posts"
+url = "posts/"
