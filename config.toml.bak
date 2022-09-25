@@ -1,0 +1,92 @@
+baseURL = "https://howboring.github.io/"
+title = "InitialiZ"
+defaultContentLanguage = "en"
+themesDir = "themes"
+theme = "zozo"
+canonifyURLs = true
+enableEmoji = true
+enableGitInfo = true
+hasCJKLanguage = true
+enableRobotsTXT = true
+disableRSS = false
+disableSitemap = false
+disable404 = false
+disableHugoGeneratorInject = false
+
+[params]
+description = "Code as Poetry."
+homeSubtitle = "Code as Poetry."
+subTitle = "Code as Poetry."                                       # site's subTitle              # 网站二级标题
+footerSlogan = "My spiritual home"                                   # site's footer slogan         # 网站页脚标语
+keywords = ["Python", "C++", "Julia", "Deep Learning"]
+enableMathJax = true                                                 # enable mathjax               # 是否使用mathjax（数学公式）
+enableSummary = true                                                 # display the article summary  # 是否显示文章摘要
+mainSections = ["posts","post"]
+
+[[params.social]]
+name = "email"
+url = "mailto:code7thday@outlook.com"
+
+[[params.social]]
+name = "github"
+url = "https://github.com/howboring"
+
+# [[params.social]]
+# name = "linkedin"
+# url = "https://www.linkedin.com/"
+# [[params.social]]
+# name = "stackoverflow"
+# url = "https://www.stackoverflow.com/"
+[languages]
+
+[languages.en]
+weight = 1
+# language code
+languageCode = "en"
+# language name
+languageName = "English"
+# whether to include Chinese/Japanese/Korean
+hasCJKLanguage = true
+# [UA--X] google analytics code
+googleAnalytics = ""
+# copyright description used only for seo schema
+# copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+
+[permalinks]
+posts = "/posts/:year/:month/:title/"
+
+[author]
+name = "Zachariah Hou"
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+
+[menu]
+
+[[menu.main]]
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 10
+
+[[menu.main]]
+identifier = "posts"
+name = "Posts"
+url = "/posts/"
+weight = 20
+
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+weight = 30
+
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 40
+
+[social]
+github = "https://github.com/howboring"

@@ -1,92 +1,62 @@
-baseURL = "https://howboring.github.io/"
-title = "InitialiZ"
-defaultContentLanguage = "en"
-themesDir = "themes"
-theme = "zozo"
-canonifyURLs = true
-enableEmoji = true
-enableGitInfo = true
-hasCJKLanguage = true
-enableRobotsTXT = true
-disableRSS = false
-disableSitemap = false
-disable404 = false
-disableHugoGeneratorInject = false
+baseurl = "https://howboring.github.io/"
+languageCode = "en-us"
+theme = "hello-friend"
+paginate = 5
 
 [params]
-description = "Code as Poetry."
-homeSubtitle = "Code as Poetry."
-subTitle = "Code as Poetry."                                       # site's subTitle              # 网站二级标题
-footerSlogan = "My spiritual home"                                   # site's footer slogan         # 网站页脚标语
-keywords = ["Python", "C++", "Julia", "Deep Learning"]
-enableMathJax = true                                                 # enable mathjax               # 是否使用mathjax（数学公式）
-enableSummary = true                                                 # display the article summary  # 是否显示文章摘要
-mainSections = ["posts","post"]
+# dir name of your blog content (default is `content/posts`).
+# the list of set content will show up on your index page (baseurl).
+contentTypeName = "posts"
 
-[[params.social]]
-name = "email"
-url = "mailto:code7thday@outlook.com"
+# OS theme is default when not provided, but you can force it to "light" or "dark"
+defaultTheme = "dark"
 
-[[params.social]]
-name = "github"
-url = "https://github.com/howboring"
+# if you set this to 0, only submenu trigger will be visible
+showMenuItems = 2
 
-# [[params.social]]
-# name = "linkedin"
-# url = "https://www.linkedin.com/"
-# [[params.social]]
-# name = "stackoverflow"
-# url = "https://www.stackoverflow.com/"
+# Show reading time in minutes for posts
+showReadingTime = false
+
+# Show table of contents at the top of your posts (defaults to false)
+# Alternatively, add this param to post front matter for specific posts
+# toc = true
+
+# Show full page content in RSS feed items
+#(default is Description or Summary metadata in the front matter)
+# rssFullText = true
+
 [languages]
-
 [languages.en]
-weight = 1
-# language code
-languageCode = "en"
-# language name
-languageName = "English"
-# whether to include Chinese/Japanese/Korean
-hasCJKLanguage = true
-# [UA--X] google analytics code
-googleAnalytics = ""
-# copyright description used only for seo schema
-# copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+title = "InitialiZ"
+subtitle = "I'm Boring, thus I wanted my life to account for more than that."
+keywords = ["Python", "C++", "Deep Learing"]
+copyright = ""
+menuMore = "Show more"
+writtenBy = "Written by"
+readMore = "Read more"
+readOtherPosts = "Read other posts"
+newerPosts = "Newer posts"
+olderPosts = "Older posts"
+minuteReadingTime = "min read"
+dateFormatSingle = "2006-01-02"
+dateFormatList = "2006-01-02"
+# leave empty to disable, enter display text to enable
+# lastModDisplay = ""
 
-[permalinks]
-posts = "/posts/:year/:month/:title/"
+[languages.en.params.logo]
+logoText = "Z"
+logoHomeLink = "/"
+# or
+#
+# path = "/img/your-example-logo.svg"
+# alt = "Your example logo alt text"
 
-[author]
-name = "Zachariah Hou"
-
-[taxonomies]
-tag = "tags"
-category = "categories"
-
-[menu]
-
-[[menu.main]]
-identifier = "home"
-name = "Home"
-url = "/"
-weight = 10
-
-[[menu.main]]
-identifier = "posts"
-name = "Posts"
-url = "/posts/"
-weight = 20
-
-[[menu.main]]
-identifier = "tags"
-name = "Tags"
-url = "/tags/"
-weight = 30
-
-[[menu.main]]
+[languages.en.menu]
+[[languages.en.menu.main]]
 identifier = "about"
 name = "About"
-url = "/about/"
-weight = 40
-
-[social]
-github = "https://github.com/howboring"
+url = "/about"
+[[languages.en.menu.main]]
+identifier = "showcase"
+name = "Showcase"
+url = "/showcase"
